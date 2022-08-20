@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Noto+Serif&family=Roboto:wght@100&display=swap');
+/* 	roboto <--> roboto/sans serif
+   	fira code <--> monospace
+   	noto <--> serif
+*/
+/*	font-family: 'Fira Code', monospace;
+	font-family: 'Noto Serif', serif;
+	font-family: 'Roboto', sans-serif;
+*/
+
+#timerDiv {
+	width: 480px;
+	border: 1px dashed black;
+	padding: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 100px;
+	font-family: 'Arial';
+	text-align: center;
+
+	display: block;
+}
+
+#settingDiv {
+	margin-top: 20px;
+}

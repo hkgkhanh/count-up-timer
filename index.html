@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Count-up Timer</title>
+  </head>
+	
+  <body>
+
+    <div id="timerDiv">
+      0.00
+      <!--<table>
+        <tr>
+          <td>0</td>
+          <td>:</td>
+          <td>0</td>
+          <td>0</td>
+          <td>.</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </table>-->
+    </div>
+
+
+    <div id="settingDiv">
+      <label for="font">Choose a font:</label>
+      <select name="font" id="fontSelect" onchange="updateFont()">
+        <option value="'Arial'">Arial</option>
+        <option value="'Roboto', sans-serif">Roboto</option>
+        <option value="'Fira Code', monospace">monospace</option>
+        <option value="'Noto Serif', serif">serif</option>
+      </select><br>
+
+      <input type="checkbox" id="useMilliInput" name="useMilli" onchange="toggleMilli()">
+      <label for="useMilli"> use millisecond</label><br>
+
+      <label for="textColor"> Text color: </label>
+      <input type="color" id="textColorInput" name="textColor" onchange="updateTextColor()"><br>
+      <label for="bgColor"> Background color: </label>
+      <input type="color" id="bgColorInput" name="bgColor" onchange="updateBgColor()"><br>
+    </div>
+
+    <label>Input time here: </label><input type="text" placeholder="M:ss.mm(m)" id="getTimeInput">
+
+    <button onclick="startTimer()">START</button>
+    <button onclick="resetTimer()">RESET</button>
+
+
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
